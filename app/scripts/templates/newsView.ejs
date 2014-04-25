@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="panel panel-default">
+      <div class="panel-heading"><a href="<%= model.url %>"><%= model.title %></a></div>
+      <div class="panel-body">
+      	<% if (model.image) { %>
+      		<img src="<%= model.image %>" style="float:left; max-height: 200px; max-width:200px; margin-right:10px; margin-bottom:10px;">
+      	<% } %>
+      	<%= model.content %>
+      </div>
+    </div>
+</div>
